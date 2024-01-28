@@ -16,7 +16,7 @@ mongoose.connect("mongodb+srv://tanapol418:fcmoxrWFYRvqMWYC@nongp.vwv5snc.mongod
 const app = express()
 app.use(cors({
     origin: ['http://localhost:5173'],
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'HEAD', 'PATCH'],
     credentials: true
 }))
 app.use(bodyParser.json())
